@@ -7,7 +7,11 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->group("{locale}/panel", static function ($routes) {
     $routes->get("/", "Home::index", [
-        "as" => "home",
+        "as" => "dashboard",
+        "filter" => "permission:dashboard.view",
+    ]);
+    $routes->get("settings", "AppConfigController::index", [
+        "as" => "settings",
         "filter" => "permission:dashboard.view",
     ]);
 });
