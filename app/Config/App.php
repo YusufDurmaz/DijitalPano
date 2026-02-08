@@ -16,7 +16,7 @@ class App extends BaseConfig
      *
      * E.g., http://example.com/
      */
-    public string $baseURL = 'http://localhost:8080/';
+    public string $baseURL = "http://localhost/DijitalPano/";
 
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.
@@ -40,7 +40,7 @@ class App extends BaseConfig
      * something else. If you have configured your web server to remove this file
      * from your site URIs, set this variable to an empty string.
      */
-    public string $indexPage = 'index.php';
+    public string $indexPage = "";
 
     /**
      * --------------------------------------------------------------------------
@@ -57,7 +57,7 @@ class App extends BaseConfig
      *
      * WARNING: If you set this to 'PATH_INFO', URIs will always be URL-decoded!
      */
-    public string $uriProtocol = 'REQUEST_URI';
+    public string $uriProtocol = "REQUEST_URI";
 
     /*
     |--------------------------------------------------------------------------
@@ -81,7 +81,7 @@ class App extends BaseConfig
     | DO NOT CHANGE THIS UNLESS YOU FULLY UNDERSTAND THE REPERCUSSIONS!!
     |
     */
-    public string $permittedURIChars = 'a-z 0-9~%.:_\-';
+    public string $permittedURIChars = "a-z 0-9~%.:_\-";
 
     /**
      * --------------------------------------------------------------------------
@@ -93,7 +93,7 @@ class App extends BaseConfig
      * strings (like currency markers, numbers, etc), that your program
      * should run under for this request.
      */
-    public string $defaultLocale = 'en';
+    public string $defaultLocale = "en";
 
     /**
      * --------------------------------------------------------------------------
@@ -120,7 +120,7 @@ class App extends BaseConfig
      *
      * @var list<string>
      */
-    public array $supportedLocales = ['en'];
+    public array $supportedLocales = ["en"];
 
     /**
      * --------------------------------------------------------------------------
@@ -133,7 +133,7 @@ class App extends BaseConfig
      * @see https://www.php.net/manual/en/timezones.php for list of timezones
      *      supported by PHP.
      */
-    public string $appTimezone = 'UTC';
+    public string $appTimezone = "UTC";
 
     /**
      * --------------------------------------------------------------------------
@@ -145,7 +145,7 @@ class App extends BaseConfig
      *
      * @see http://php.net/htmlspecialchars for a list of supported charsets.
      */
-    public string $charset = 'UTF-8';
+    public string $charset = "UTF-8";
 
     /**
      * --------------------------------------------------------------------------
