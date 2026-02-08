@@ -6,6 +6,8 @@ class Home extends BaseController
 {
     public function index(): string
     {
-        return view("dashboard/index");
+        $configModel = new \App\Models\AppConfig();
+        $data = $configModel->getConfigValues(["school_name"]);
+        return view("dashboard/index", $data);
     }
 }
