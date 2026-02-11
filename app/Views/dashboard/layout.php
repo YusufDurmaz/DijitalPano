@@ -58,39 +58,11 @@ $school_name = $config["school_name"];
       <div class="position-sticky pt-3">
         <ul class="nav flex-column">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">
+            <a class="nav-link active" aria-current="page" href="<?= url_to(
+                "dashboard",
+            ) ?>">
               <span data-feather="home"></span>
               <?= lang("App.dashboard") ?>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="file"></span>
-              Orders
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="shopping-cart"></span>
-              Products
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="users"></span>
-              Customers
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="bar-chart-2"></span>
-              Reports
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="layers"></span>
-              Integrations
             </a>
           </li>
         </ul>
@@ -125,3 +97,19 @@ $school_name = $config["school_name"];
     <script src="<?= site_url("public/assets/js/dashboard.js") ?>"></script>
   </body>
 </html>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.sidebar .nav-link');
+    const currentUrl = window.location.href;
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        link.removeAttribute('aria-current');
+
+        if (link.href === currentUrl) {
+            link.classList.add('active');
+            link.setAttribute('aria-current', 'page');
+        }
+    });
+});
+</script>
