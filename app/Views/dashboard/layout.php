@@ -66,6 +66,16 @@ $school_name = $config["school_name"];
             </a>
           </li>
         </ul>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="<?= url_to(
+                "preview",
+            ) ?>">
+              <span data-feather="eye"></span>
+              <?= lang("App.preview") ?>
+            </a>
+          </li>
+        </ul>
 
         <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
             <span><?= lang("App.Sidebar.others") ?></span>

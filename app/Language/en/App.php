@@ -5,6 +5,7 @@ return [
     "settings" => "Settings",
     "save" => "Save",
     "panel" => "Panel",
+    "preview" => "Preview"
     "Sidebar" => [
         "others" => "Others",
     ],

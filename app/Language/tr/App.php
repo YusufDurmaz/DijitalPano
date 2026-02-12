@@ -5,6 +5,7 @@ return [
     "settings" => "Ayarlar",
     "save" => "Kaydet",
     "panel" => "Pano",
+    "preview" => "Önizleme",
     "Sidebar" => [
         "others" => "Diğer",
     ],
