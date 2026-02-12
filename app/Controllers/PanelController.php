@@ -11,6 +11,14 @@ class PanelController extends BaseController
     {
         $configModel = new \App\Models\AppConfigModel();
         $config = $configModel->getConfigValues();
-        return view("panel/index.php");
+
+        $locale = service("request")->getLocale();
+        $jsLocale = $locale === "tr" ? "tr-TR" : "en-US";
+
+        $data = [
+            "js_locale" => $jsLocale,
+        ];
+
+        return view("panel/index.php", $data);
     }
 }
