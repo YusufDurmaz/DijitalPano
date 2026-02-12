@@ -14,6 +14,10 @@ $routes->group("{locale}/panel", static function ($routes) {
         "as" => "settings",
         "filter" => "permission:dashboard.view",
     ]);
+    $routes->get("panel", "PanelController::index", [
+        "as" => "panel",
+        "filter" => "permission:dashboard.view",
+    ]);
 });
 
 $routes->group("{locale}/panel", static function ($routes) {

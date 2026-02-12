@@ -79,6 +79,14 @@ $school_name = $config["school_name"];
               <?= lang("App.settings") ?>
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="<?= url_to(
+                "panel",
+            ) ?>">
+              <span data-feather="tv"></span>
+              <?= lang("App.panel") ?>
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
