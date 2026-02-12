@@ -31,8 +31,8 @@ body {
 }
 
 .logo {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 16w;
+    max-height: 16vw;
 }
 
 .container {
