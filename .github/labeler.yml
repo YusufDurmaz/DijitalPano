@@ -1,0 +1,118 @@
+# ==== PATH BASED (CodeIgniter 4 yapısı) ====
+
+Config:
+  - changed-files:
+      - any-glob-to-any-file:
+          - app/Config/**
+
+Controllers:
+  - changed-files:
+      - any-glob-to-any-file:
+          - app/Controllers/**
+
+Models:
+  - changed-files:
+      - any-glob-to-any-file:
+          - app/Models/**
+
+Views:
+  - changed-files:
+      - any-glob-to-any-file:
+          - app/Views/**
+
+Database:
+  - changed-files:
+      - any-glob-to-any-file:
+          - app/Database/**
+
+Migrations:
+  - changed-files:
+      - any-glob-to-any-file:
+          - app/Database/Migrations/**
+
+Seeds:
+  - changed-files:
+      - any-glob-to-any-file:
+          - app/Database/Seeds/**
+
+Helpers:
+  - changed-files:
+      - any-glob-to-any-file:
+          - app/Helpers/**
+
+Filters:
+  - changed-files:
+      - any-glob-to-any-file:
+          - app/Filters/**
+
+Language:
+  - changed-files:
+      - any-glob-to-any-file:
+          - app/Language/**
+
+Public:
+  - changed-files:
+      - any-glob-to-any-file:
+          - public/**
+
+Tests:
+  - changed-files:
+      - any-glob-to-any-file:
+          - tests/**
+
+Docs:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "**/*.md"
+
+Composer:
+  - changed-files:
+      - any-glob-to-any-file:
+          - composer.json
+          - composer.lock
+
+GitHub:
+  - changed-files:
+      - any-glob-to-any-file:
+          - .github/**
+
+
+# ==== TITLE BASED (PR başlığına göre) ====
+
+Bug:
+  - pull-request-title:
+      - "^fix"
+      - "^bug"
+      - "bugfix"
+
+Feature:
+  - pull-request-title:
+      - "^feat"
+      - "^feature"
+      - "add"
+
+Refactor:
+  - pull-request-title:
+      - "^refactor"
+      - "cleanup"
+
+Docs-Title:
+  - pull-request-title:
+      - "^docs"
+      - "documentation"
+
+Test:
+  - pull-request-title:
+      - "^test"
+      - "^tests"
+
+Chore:
+  - pull-request-title:
+      - "^chore"
+      - "^ci"
+      - "^build"
+
+Hotfix:
+  - pull-request-title:
+      - "hotfix"
+      - "urgent"
