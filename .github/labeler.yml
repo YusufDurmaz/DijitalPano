@@ -1,4 +1,4 @@
-# ==== PATH BASED (CodeIgniter 4 yapısı) ====
+# ==== PATH BASED ====
 
 Config:
   - changed-files:
@@ -77,42 +77,34 @@ GitHub:
           - .github/**
 
 
-# ==== TITLE BASED (PR başlığına göre) ====
+# ==== TITLE BASED (STRICT) ====
 
 Bug:
   - pull-request-title:
-      - "^fix"
-      - "^bug"
-      - "bugfix"
+      - "^fix:"
 
 Feature:
   - pull-request-title:
-      - "^feat"
-      - "^feature"
-      - "add"
+      - "^feat:"
 
 Refactor:
   - pull-request-title:
-      - "^refactor"
-      - "cleanup"
+      - "^refactor:"
 
 Docs-Title:
   - pull-request-title:
-      - "^docs"
-      - "documentation"
+      - "^docs:"
 
 Test:
   - pull-request-title:
-      - "^test"
-      - "^tests"
+      - "^test:"
 
 Chore:
   - pull-request-title:
-      - "^chore"
-      - "^ci"
-      - "^build"
+      - "^chore:"
+      - "^ci:"
+      - "^build:"
 
 Hotfix:
   - pull-request-title:
-      - "hotfix"
-      - "urgent"
+      - "^hotfix:"
