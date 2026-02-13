@@ -24,7 +24,7 @@ $routes->group("{locale}/panel", static function ($routes) {
     service("auth")->routes($routes);
 });
 
-$routes->get("{locale}", "PanelController::index", [
-    "as" => "panel",
+$routes->get("{locale}", "BoardController::index", [
+    "as" => "board",
     "filter" => "permission:dashboard.view",
 ]);

@@ -5,7 +5,7 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use CodeIgniter\HTTP\ResponseInterface;
 
-class PanelController extends BaseController
+class BoardController extends BaseController
 {
     public function index()
     {
@@ -19,6 +19,6 @@ class PanelController extends BaseController
             "js_locale" => $jsLocale,
         ];
 
-        return view("panel/index.php", $data);
+        return view("board/index.php", $data);
     }
 }

@@ -91,10 +91,10 @@ $school_name = $config["school_name"];
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="<?= url_to(
-                "panel",
+                "board",
             ) ?>">
               <span data-feather="tv"></span>
-              <?= lang("App.panel") ?>
+              <?= lang("App.board") ?>
             </a>
           </li>
         </ul>

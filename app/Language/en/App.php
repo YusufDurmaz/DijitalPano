@@ -4,7 +4,7 @@ return [
     "dashboard" => "Dashboard",
     "settings" => "Settings",
     "save" => "Save",
-    "panel" => "Panel",
+    "board" => "Board",
     "preview" => "Preview",
     "Sidebar" => [
         "others" => "Others",

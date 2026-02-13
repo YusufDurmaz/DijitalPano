@@ -4,7 +4,7 @@ return [
     "dashboard" => "Ana Sayfa",
     "settings" => "Ayarlar",
     "save" => "Kaydet",
-    "panel" => "Pano",
+    "board" => "Pano",
     "preview" => "Önizleme",
     "Sidebar" => [
         "others" => "Diğer",
