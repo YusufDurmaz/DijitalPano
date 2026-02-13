@@ -46,7 +46,7 @@ class Auth extends ShieldAuth
      * --------------------------------------------------------------------
      */
     public array $views = [
-        "login" => "\CodeIgniter\Shield\Views\login",
+        "login" => "\App\Views\dashboard\login",
         "register" => '\CodeIgniter\Shield\Views\register',
         "layout" => "\CodeIgniter\Shield\Views\layout",
         "action_email_2fa" => '\CodeIgniter\Shield\Views\email_2fa_show',
@@ -79,8 +79,8 @@ class Auth extends ShieldAuth
      * to apply any logic you may need.
      */
     public array $redirects = [
-        "register" => "home",
-        "login" => "home",
+        "register" => "dashboard",
+        "login" => "dashboard",
         "logout" => "login",
         "force_reset" => "/",
         "permission_denied" => "/",
