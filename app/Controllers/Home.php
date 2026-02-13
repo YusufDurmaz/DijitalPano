@@ -7,10 +7,10 @@ class Home extends BaseController
     public function index(): string
     {
         $configModel = new \App\Models\AppConfigModel();
-        $title = lang("App.dashboard");
+        $title = lang("App.dashboardd");
 
         $data = [
-            "title" => $title,
+            "titleDeneme" => $title,
         ];
 
         return view("dashboard/index", $data);
